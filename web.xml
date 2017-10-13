@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>Twilio Wake-up Word conference service</display-name>
+    
+    <servlet>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>com.twilio.MainServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>WuwServlet</servlet-name>
+        <servlet-class>com.twilio.WuwServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WuwServlet</servlet-name>
+        <url-pattern>/wuw</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>WuwDetected</servlet-name>
+        <servlet-class>com.twilio.WuwDetected</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WuwDetected</servlet-name>
+        <url-pattern>/wuwdetected</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>PlayBeep</servlet-name>
+        <servlet-class>com.twilio.PlayBeep</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PlayBeep</servlet-name>
+        <url-pattern>/beep</url-pattern>
+    </servlet-mapping>
+
+</web-app>
