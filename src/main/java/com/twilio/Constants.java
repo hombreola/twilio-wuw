@@ -21,14 +21,14 @@ public class Constants {
     final static String ACCOUNT_SID = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; // Found on your Twilio Dashboard
     final static String AUTH_TOKEN = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; // Found on your Twilio Dashboard
     final static String TWILIO_NUMBER = "XXXXXXXXXXXX";
-    final static String WUW_CALL_ENDPOINT = "https://foo.bar/twilio/wuw";
+    final static String WUW_CALL_ENDPOINT = "http://foo.bar/wuw";
     final static String CONFERENCE_NAME = "Conference";
 
     final static String WUW = "abracadabra"; // the magic word
     final static String WUW_PROMPT = "Welcome to the wake up word service. You will hear a beep every time you say the magic word";
-    final static String WUW_DETECTED_CALLBACK = "/twilio/wuwdetected";
+    final static String WUW_DETECTED_CALLBACK = "/wuwdetected";
 
-    final static String BEEP_PLAYER_URL = "https://foo.bar/twilio/beep";
+    final static String BEEP_PLAYER_URL = "http://foo.bar/beep";
     final static String BEEP_SOUND_URL = "https://www.soundjay.com/button/sounds/beep-01a.wav";
     
     static String CALL_SID;
